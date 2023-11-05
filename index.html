@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Youtube
+    </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+    <div class="header" >
+
+        <div class="left-section">
+            <svg class="hamburger-menu"width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_3)">
+                <path d="M20 17.5C20.3852 17.5002 20.7556 17.6486 21.0344 17.9144C21.3132 18.1802 21.479 18.5431 21.4975 18.9279C21.516 19.3127 21.3858 19.6898 21.1338 19.9812C20.8818 20.2726 20.5274 20.4558 20.144 20.493L20 20.5H4C3.61478 20.4998 3.24441 20.3514 2.96561 20.0856C2.68682 19.8198 2.52099 19.4569 2.50248 19.0721C2.48396 18.6873 2.61419 18.3102 2.86618 18.0188C3.11816 17.7274 3.47258 17.5442 3.856 17.507L4 17.5H20ZM20 10.5C20.3978 10.5 20.7794 10.658 21.0607 10.9393C21.342 11.2206 21.5 11.6022 21.5 12C21.5 12.3978 21.342 12.7794 21.0607 13.0607C20.7794 13.342 20.3978 13.5 20 13.5H4C3.60218 13.5 3.22064 13.342 2.93934 13.0607C2.65804 12.7794 2.5 12.3978 2.5 12C2.5 11.6022 2.65804 11.2206 2.93934 10.9393C3.22064 10.658 3.60218 10.5 4 10.5H20ZM20 3.5C20.3978 3.5 20.7794 3.65804 21.0607 3.93934C21.342 4.22064 21.5 4.60218 21.5 5C21.5 5.39782 21.342 5.77936 21.0607 6.06066C20.7794 6.34196 20.3978 6.5 20 6.5H4C3.60218 6.5 3.22064 6.34196 2.93934 6.06066C2.65804 5.77936 2.5 5.39782 2.5 5C2.5 4.60218 2.65804 4.22064 2.93934 3.93934C3.22064 3.65804 3.60218 3.5 4 3.5H20Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_3">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+    
+            <svg class="youtubelogo" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M63.874 21.906C63.5453 20.6681 62.897 19.5382 61.9943 18.6296C61.0915 17.7211 59.9658 17.0656 58.73 16.729C54.193 15.505 36 15.505 36 15.505C36 15.505 17.807 15.505 13.27 16.729C12.0342 17.0656 10.9085 17.7211 10.0057 18.6296C9.1029 19.5382 8.45469 20.6681 8.12597 21.906C6.90997 26.472 6.90997 36 6.90997 36C6.90997 36 6.90997 45.528 8.12597 50.095C8.45469 51.3329 9.1029 52.4628 10.0057 53.3714C10.9085 54.28 12.0342 54.9354 13.27 55.272C17.807 56.495 36 56.495 36 56.495C36 56.495 54.193 56.495 58.73 55.272C59.9658 54.9354 61.0915 54.28 61.9943 53.3714C62.897 52.4628 63.5453 51.3329 63.874 50.095C65.09 45.528 65.09 36 65.09 36C65.09 36 65.09 26.472 63.874 21.906Z" fill="#EA5A47"/>
+                <path d="M30.05 44.65L45.256 36L30.05 27.35V44.65Z" fill="white"/>
+                <path d="M63.874 21.906C63.5453 20.6681 62.897 19.5382 61.9943 18.6296C61.0915 17.7211 59.9658 17.0656 58.73 16.729C54.193 15.505 36 15.505 36 15.505C36 15.505 17.807 15.505 13.27 16.729C12.0342 17.0656 10.9085 17.7211 10.0057 18.6296C9.1029 19.5382 8.45469 20.6681 8.12597 21.906C6.90997 26.472 6.90997 36 6.90997 36C6.90997 36 6.90997 45.528 8.12597 50.095C8.45469 51.3329 9.1029 52.4628 10.0057 53.3714C10.9085 54.28 12.0342 54.9354 13.27 55.272C17.807 56.495 36 56.495 36 56.495C36 56.495 54.193 56.495 58.73 55.272C59.9658 54.9354 61.0915 54.28 61.9943 53.3714C62.897 52.4628 63.5453 51.3329 63.874 50.095C65.09 45.528 65.09 36 65.09 36C65.09 36 65.09 26.472 63.874 21.906Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M30.05 44.65L45.256 36L30.05 27.35V44.65Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <div class="YT">Youtube</div>
+                
+        </div>
+
+        <div class="middle-section">
+            <input class="search" type="text" placeholder="Search">
+            <button class="search-button">
+                <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14H14.71L14.43 13.73C15.4439 12.554 16.0011 11.0527 16 9.5C16 8.21442 15.6188 6.95772 14.9046 5.8888C14.1903 4.81988 13.1752 3.98676 11.9874 3.49479C10.7997 3.00282 9.49279 2.87409 8.23192 3.1249C6.97104 3.3757 5.81285 3.99477 4.90381 4.90381C3.99477 5.81285 3.3757 6.97104 3.1249 8.23192C2.87409 9.49279 3.00282 10.7997 3.49479 11.9874C3.98676 13.1752 4.81988 14.1903 5.8888 14.9046C6.95772 15.6188 8.21442 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="black"/>
+                    </svg>
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search">
+                <svg class="voice-search-icon" width="24" height="24"viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M155.7 320.3C158.5 343.6 180.6 362.7 204.7 362.7H292.5C316.6 362.7 338.7 343.6 341.5 320.3L353.2 223.7C356 200.4 356 162.3 353.2 138.9L341.5 42.3C338.6 19 316.5 0 292.4 0H204.6C180.5 0 158.4 19.1 155.6 42.4L144 138.9C141.2 162.2 141.2 200.4 144 223.7L155.7 320.3ZM419.1 170.7H376.5C376.9 190.2 376.2 210.9 374.3 226.3L362.6 322.9C358.5 357.2 327.7 384 292.4 384H204.6C169.4 384 138.6 357.1 134.4 322.9L122.7 226.3C120.8 210.9 120.1 190.2 120.5 170.7H77.9C77.5 192 78.3 214.3 80.4 231.4L92.1 328C98.8 383.3 148.2 426.6 204.6 426.6H227.2V469.3H163.2V512H333.9V469.3H269.9V426.6H292.5C349 426.6 398.4 383.2 405 327.9L416.7 231.2C418.7 214.2 419.5 191.9 419.1 170.7Z" fill="black"/>
+                    </svg>
+                    <div class="tooltip">Search with your voice</div>
+            </button>
+            
+                    
+        </div>
+
+        <div class="right-section">
+            <button class="upload">
+                <svg class="upload" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4C16.2652 4 16.5196 4.10536 16.7071 4.29289C16.8946 4.48043 17 4.73478 17 5V9.2L22.213 5.55C22.288 5.49746 22.3759 5.4665 22.4672 5.4605C22.5586 5.4545 22.6498 5.4737 22.731 5.51599C22.8122 5.55829 22.8802 5.62206 22.9276 5.70035C22.9751 5.77865 23.0001 5.86846 23 5.96V18.04C23.0001 18.1315 22.9751 18.2214 22.9276 18.2996C22.8802 18.3779 22.8122 18.4417 22.731 18.484C22.6498 18.5263 22.5586 18.5455 22.4672 18.5395C22.3759 18.5335 22.288 18.5025 22.213 18.45L17 14.8V19C17 19.2652 16.8946 19.5196 16.7071 19.7071C16.5196 19.8946 16.2652 20 16 20H2C1.73478 20 1.48043 19.8946 1.29289 19.7071C1.10536 19.5196 1 19.2652 1 19V5C1 4.73478 1.10536 4.48043 1.29289 4.29289C1.48043 4.10536 1.73478 4 2 4H16ZM8 8V11H5V13H7.999L8 16H10L9.999 13H13V11H10V8H8Z" fill="black"/>
+                </svg>     
+                <div class="tooltip">Create</div>               
+            </button>
+            <button class="more">
+                <svg class="more" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4Z" fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M18 28H6C4.89543 28 4 28.8954 4 30V42C4 43.1046 4.89543 44 6 44H18C19.1046 44 20 43.1046 20 42V30C20 28.8954 19.1046 28 18 28Z" fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M42 4H30C28.8954 4 28 4.89543 28 6V18C28 19.1046 28.8954 20 30 20H42C43.1046 20 44 19.1046 44 18V6C44 4.89543 43.1046 4 42 4Z" fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M28 28H44" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M36 36H44" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28 44H44" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="tooltip">More</div> 
+            </button>
+            <button class="notification">
+                <div class="notification-icon-container">
+                    <svg class="notification" width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M225.29 165.93C216.61 151 212 129.57 212 104C212 81.7218 203.15 60.3561 187.397 44.603C171.644 28.85 150.278 20 128 20C105.722 20 84.3561 28.85 68.603 44.603C52.85 60.3561 44 81.7218 44 104C44 129.58 39.41 151 30.73 165.93C28.9588 168.975 28.0199 172.433 28.0077 175.956C27.9954 179.478 28.9101 182.943 30.66 186C32.3988 189.059 34.9226 191.599 37.9709 193.357C41.0191 195.115 44.4813 196.027 48 196H84.18C85.1723 206.936 90.2181 217.106 98.3263 224.512C106.434 231.918 117.019 236.024 128 236.024C138.981 236.024 149.566 231.918 157.674 224.512C165.782 217.106 170.828 206.936 171.82 196H208C211.514 196.022 214.97 195.107 218.012 193.349C221.055 191.591 223.574 189.055 225.31 186C227.067 182.947 227.991 179.485 227.987 175.962C227.984 172.44 227.054 168.98 225.29 165.93ZM128 212C123.389 212.001 118.92 210.409 115.348 207.493C111.777 204.578 109.322 200.517 108.4 196H147.6C146.678 200.517 144.223 204.578 140.652 207.493C137.08 210.409 132.611 212.001 128 212ZM54.66 172C63.51 154 68 131.14 68 104C68 88.087 74.3214 72.8258 85.5736 61.5736C96.8258 50.3214 112.087 44 128 44C143.913 44 159.174 50.3214 170.426 61.5736C181.679 72.8258 188 88.087 188 104C188 131.13 192.48 154 201.33 172H54.66Z" fill="black"/>
+                        </svg>
+                        <div class="tooltip">Notification</div>
+                    <div class="notification-count">3</div>
+                </div>
+            </button>
+            <button class="ID">
+                ID
+                <div class="tooltip">Account</div>
+            </button>
+        </div>
+        
+    
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M261.56 101.28C260.071 99.8558 258.09 99.0609 256.03 99.0609C253.97 99.0609 251.989 99.8558 250.5 101.28L66.4 277.15C65.6182 277.898 64.9962 278.797 64.5716 279.792C64.1471 280.787 63.9288 281.858 63.93 282.94L63.9 448C63.9 456.487 67.2714 464.626 73.2726 470.627C79.2738 476.629 87.4131 480 95.9 480H192C196.243 480 200.313 478.314 203.314 475.314C206.314 472.313 208 468.243 208 464V328C208 325.878 208.843 323.843 210.343 322.343C211.843 320.843 213.878 320 216 320H296C298.122 320 300.157 320.843 301.657 322.343C303.157 323.843 304 325.878 304 328V464C304 468.243 305.686 472.313 308.686 475.314C311.687 478.314 315.757 480 320 480H416.06C424.547 480 432.686 476.629 438.687 470.627C444.689 464.626 448.06 456.487 448.06 448V282.94C448.061 281.858 447.843 280.787 447.418 279.792C446.994 278.797 446.372 277.898 445.59 277.15L261.56 101.28Z" fill="black"/>
+                <path d="M490.91 244.15L416.11 172.59V64C416.11 59.7565 414.424 55.6869 411.424 52.6863C408.423 49.6857 404.353 48 400.11 48H352.11C347.867 48 343.797 49.6857 340.796 52.6863C337.796 55.6869 336.11 59.7565 336.11 64V96L278.19 40.62C272.77 35.14 264.71 32 256 32C247.32 32 239.28 35.14 233.86 40.63L21.16 244.13C14.94 250.13 14.16 260 19.82 266.5C21.2413 268.141 22.9816 269.475 24.935 270.422C26.8884 271.368 29.014 271.908 31.1824 272.007C33.3509 272.106 35.5168 271.763 37.5484 270.999C39.5801 270.234 41.4349 269.064 43 267.56L250.5 69.28C251.989 67.8558 253.97 67.0609 256.03 67.0609C258.09 67.0609 260.071 67.8558 261.56 69.28L469.08 267.56C472.137 270.491 476.231 272.091 480.466 272.009C484.7 271.926 488.73 270.168 491.67 267.12C497.81 260.76 497.3 250.26 490.91 244.15Z" fill="black"/>
+            </svg>
+            <div class="text">Home</div>
+                
+        </div>
+        <div class="sidebar-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 17.5L14 14L17.5 6.5L10 10L6.5 17.5ZM12 13C11.7167 13 11.479 12.904 11.287 12.712C11.095 12.52 10.9993 12.2827 11 12C11 11.7167 11.096 11.479 11.288 11.287C11.48 11.095 11.7173 10.9993 12 11C12.2833 11 12.521 11.096 12.713 11.288C12.905 11.48 13.0007 11.7173 13 12C13 12.2833 12.904 12.521 12.712 12.713C12.52 12.905 12.2827 13.0007 12 13ZM12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6877 15.9 21.213C14.6833 21.7383 13.3833 22.0007 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="black"/>
+                </svg>
+                <div class="text">Explore</div>
+                
+        </div>
+        <div class="sidebar-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8H4V6H20V8ZM18 2H6V4H18V2ZM22 12V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V12C2 11.4696 2.21071 10.9609 2.58579 10.5858C2.96086 10.2107 3.46957 10 4 10H20C20.5304 10 21.0391 10.2107 21.4142 10.5858C21.7893 10.9609 22 11.4696 22 12ZM16 16L10 12.73V19.26L16 16Z" fill="black"/>
+                </svg>
+                <div class="text">Subscription</div>
+        </div>
+        <div class="sidebar-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 12L10.5 14V10L14 12Z" fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12.707V11.292C2 8.39699 2 6.94899 2.905 6.01799C3.811 5.08599 5.237 5.04599 8.088 4.96499C9.438 4.92699 10.818 4.89999 12 4.89999C13.181 4.89999 14.561 4.92699 15.912 4.96499C18.763 5.04599 20.189 5.08599 21.094 6.01799C22 6.94899 22 8.39799 22 11.292V12.707C22 15.603 22 17.05 21.095 17.982C20.189 18.913 18.764 18.954 15.912 19.034C14.562 19.073 13.182 19.1 12 19.1C10.6958 19.0961 9.39163 19.0741 8.088 19.034C5.237 18.954 3.811 18.914 2.905 17.982C2 17.05 2 15.602 2 12.708V12.707Z" stroke="black" stroke-width="1.5"/>
+                </svg>
+                <div class="text">Originals</div>
+                
+        </div>
+        <div class="sidebar-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_5_13)">
+                <path d="M21 5.18V17C20.9998 17.8805 20.7091 18.7363 20.1729 19.4348C19.6368 20.1332 18.8852 20.6352 18.0346 20.863C17.1841 21.0907 16.2822 21.0315 15.4687 20.6944C14.6553 20.3573 13.9758 19.7613 13.5357 18.9987C13.0955 18.2361 12.9193 17.3496 13.0343 16.4767C13.1493 15.6037 13.5491 14.7931 14.1717 14.1705C14.7944 13.5479 15.605 13.1482 16.478 13.0333C17.351 12.9184 18.2375 13.0948 19 13.535V9.181L9 10.847V18C9 18.06 8.995 18.117 8.985 18.174C9.05679 18.943 8.87222 19.7141 8.46005 20.3672C8.04787 21.0204 7.43124 21.5189 6.70622 21.785C5.9812 22.0511 5.18852 22.07 4.45166 21.8386C3.71481 21.6073 3.07518 21.1387 2.63242 20.5059C2.18965 19.8731 1.96863 19.1116 2.00378 18.3401C2.03893 17.5685 2.32828 16.8303 2.82676 16.2404C3.32523 15.6505 4.00482 15.242 4.75966 15.0786C5.5145 14.9152 6.30219 15.006 7 15.337V6.847C6.99994 6.37356 7.16784 5.91546 7.47381 5.55418C7.77979 5.1929 8.20401 4.95188 8.671 4.874L18.671 3.208C18.9575 3.16023 19.2509 3.17541 19.5309 3.2525C19.8109 3.32959 20.0707 3.46674 20.2924 3.65441C20.514 3.84207 20.6921 4.07576 20.8143 4.33921C20.9365 4.60267 20.9999 4.88958 21 5.18ZM5.5 17C5.10217 17 4.72064 17.158 4.43934 17.4393C4.15803 17.7206 4 18.1022 4 18.5C4 18.8978 4.15803 19.2794 4.43934 19.5607C4.72064 19.842 5.10217 20 5.5 20C5.89782 20 6.27936 19.842 6.56066 19.5607C6.84196 19.2794 7 18.8978 7 18.5C7 18.1022 6.84196 17.7206 6.56066 17.4393C6.27936 17.158 5.89782 17 5.5 17ZM17 15C16.4696 15 15.9609 15.2107 15.5858 15.5858C15.2107 15.9609 15 16.4696 15 17C15 17.5304 15.2107 18.0391 15.5858 18.4142C15.9609 18.7893 16.4696 19 17 19C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17C19 16.4696 18.7893 15.9609 18.4142 15.5858C18.0391 15.2107 17.5304 15 17 15ZM19 5.18L9 6.847V8.82L19 7.153V5.18Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_5_13">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                <div class="text">Music</div>
+                
+        </div>
+        <div class="sidebar-link">
+            <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 464V144H16V472C16.0071 478.363 18.538 484.463 23.0373 488.963C27.5367 493.462 33.637 495.993 40 496H368V464H48Z" fill="black"/>
+                <path d="M144 400H112V80H80V408C80.0071 414.363 82.538 420.463 87.0373 424.963C91.5367 429.462 97.637 431.993 104 432H432V400H144Z" fill="black"/>
+                <path d="M472 16H168C161.637 16.0071 155.537 18.538 151.037 23.0373C146.538 27.5367 144.007 33.637 144 40V344C144.007 350.363 146.538 356.463 151.037 360.963C155.537 365.462 161.637 367.993 168 368H472C478.363 367.993 484.463 365.462 488.963 360.963C493.462 356.463 495.993 350.363 496 344V40C495.993 33.637 493.462 27.5367 488.963 23.0373C484.463 18.538 478.363 16.0071 472 16ZM464 336H176V48H464V336Z" fill="black"/>
+                <path d="M304 288H336V204H420V172H336V88H304V172H220V204H304V288Z" fill="black"/>
+                </svg>
+                <div class="text">Library</div>
+                
+        </div>
+    </div>
+
+
+    <div class="video-grid">
+
+
+        <div >
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailone" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg">
+                    <div class="video-time">9:49</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW M8 2018 Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Sharma</p>
+                        <p class="thumbnailonetwo">3.4M views 6 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailtwo" src="thumbnails/2023_toyota_gr_corolla_circuit_edition_4k_3-3840x2160.jpg">
+                    <div class="video-time">10:49</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BToyota Corola Review Video!!</p>
+                        <p class="thumbnailoneone">Jack Singh</p>
+                        <p class="thumbnailonetwo">3M views 1 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailthree" src="thumbnails/audi_tt_rs_coupe_iconic_edition_2023_5k_4-5120x2880.jpg">
+                    <div class="video-time">15:49</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">Audi TT RS Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Sharma</p>
+                        <p class="thumbnailonetwo">2.5M views 2 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div >
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailfour" src="thumbnails/bmw_2002_hommage_concept-3840x2160.jpg">
+                    <div class="video-time">30:59</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW Homeage Review Video!!</p>
+                        <p class="thumbnailoneone">Marry Kumar</p>
+                        <p class="thumbnailonetwo">2M views 3.5 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailfive" src="thumbnails/bmw_m4_5k_3-5120x2880.jpg">
+                    <div class="video-time">9:00</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW I8 Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Nair</p>
+                        <p class="thumbnailonetwo">4M views 1 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailsix" src="thumbnails/bmw_m3_competition_2020_4k-3840x2160.jpg">
+                    <div class="video-time">14:55</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW M3 2020 Review Video!!</p>
+                        <p class="thumbnailoneone">Uttam Jangid</p>
+                        <p class="thumbnailonetwo">5.4M views 7 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div >
+                <div >
+                    <div class="video-preview">
+                        <img class="thumbnailone" src="thumbnails/bmw_m8_competition_cabrio_2019_4k_2-3840x2160.jpg">
+                        <div class="video-time">37:08</div>
+                    </div>
+                    <div>
+                        <div class="channel-pic">
+                            <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                        </div>
+                        <div class="video-info">
+                            <p class="thumbnailone">BMW M8 2018 Review Video!!</p>
+                            <p class="thumbnailoneone">Varun Sharma</p>
+                            <p class="thumbnailonetwo">3.4M views 6 months</p>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <div class="video-preview">
+                        <img class="thumbnailtwo" src="thumbnails/bmw_x7_xdrive30d_design_pure_excellence_2019_4k-5120x2880.jpg">
+                        <div class="video-time">20:00</div>
+                    </div>
+                    <div>
+                        <div class="channel-pic">
+                            <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                        </div>
+                        <div class="video-info">
+                            <p class="thumbnailone">BToyota Corola Review Video!!</p>
+                            <p class="thumbnailoneone">Jack Singh</p>
+                            <p class="thumbnailonetwo">3M views 1 months</p>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <div class="video-preview">
+                        <img class="thumbnailthree" src="thumbnails/dodge_challenger_srt_hellcat_redeye_widebody_jailbreak_2022_4k_8k-7680x4320.jpg">
+                        <div class="video-time">9:49</div>
+                    </div>
+                    <div>
+                        <div class="channel-pic">
+                            <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                        </div>
+                        <div class="video-info">
+                            <p class="thumbnailone">Audi TT RS Review Video!!</p>
+                            <p class="thumbnailoneone">Varun Sharma</p>
+                            <p class="thumbnailonetwo">2.5M views 2 months</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div >
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailfour" src="thumbnails/hyundai_ioniq_5_n_2023-7680x4320.jpg">
+                    <div class="video-time">3:09:40</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW Homeage Review Video!!</p>
+                        <p class="thumbnailoneone">Marry Kumar</p>
+                        <p class="thumbnailonetwo">2M views 3.5 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailfive" src="thumbnails/lamborghini_revuelto_4k-5120x2880.jpg">
+                    <div class="video-time">17:49</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW I8 Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Nair</p>
+                        <p class="thumbnailonetwo">4M views 1 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailsix" src="thumbnails/rolls_royce_cullinan_black_badge_2019_4k_8k-7680x4320.jpg">
+                    <div class="video-time">4:09:49</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW M3 2020 Review Video!!</p>
+                        <p class="thumbnailoneone">Uttam Jangid</p>
+                        <p class="thumbnailonetwo">5.4M views 7 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div >
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailone" src="thumbnails/toyota_gr_supra_45th_anniversary_edition_2024_4k-7680x4320.jpg">
+                    <div class="video-time">25:09</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW M8 2018 Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Sharma</p>
+                        <p class="thumbnailonetwo">3.4M views 6 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailtwo" src="thumbnails/jaguar_f_type_svr_4k_3-3840x2160.jpg">
+                    <div class="video-time">29:09</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BToyota Corola Review Video!!</p>
+                        <p class="thumbnailoneone">Jack Singh</p>
+                        <p class="thumbnailonetwo">3M views 1 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailthree" src="thumbnails/mclaren_artura_trophy_2022_4k_8k-7680x4320.jpg">
+                    <div class="video-time">13:09</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">Audi TT RS Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Sharma</p>
+                        <p class="thumbnailonetwo">2.5M views 2 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div >
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailfour" src="thumbnails/porsche_911_gt3_r_rennsport_2023-7680x4320.jpg">
+                    <div class="video-time">11:09</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW Homeage Review Video!!</p>
+                        <p class="thumbnailoneone">Marry Kumar</p>
+                        <p class="thumbnailonetwo">2M views 3.5 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailfive" src="thumbnails/novitec_ferrari_812_superfast_n_largo_s_2023_5k-7680x4320.jpg">
+                    <div class="video-time">25:09</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW I8 Review Video!!</p>
+                        <p class="thumbnailoneone">Varun Nair</p>
+                        <p class="thumbnailonetwo">4M views 1 months</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="video-preview">
+                    <img class="thumbnailsix" src="thumbnails/bmw_m3_competition_2020_4k-3840x2160.jpg">
+                    <div class="video-time">35:30</div>
+                </div>
+                <div>
+                    <div class="channel-pic">
+                        <!--img class="thumbnailonepic" src="thumbnails/2018_bmw_m8_gte_3-2560x1440.jpg"-->
+                    </div>
+                    <div class="video-info">
+                        <p class="thumbnailone">BMW M3 2020 Review Video!!</p>
+                        <p class="thumbnailoneone">Uttam Jangid</p>
+                        <p class="thumbnailonetwo">5.4M views 7 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+
+
+</body>
+
+</html>
